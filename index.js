@@ -92,4 +92,12 @@ function generatePassword() {
     "?",
     "/",
   ];
+  let password = " ";
+  for (let i = 0; i < password.length; i++) {
+    let randomIndex = Math.floor(Math.random() * characters);
+    password += characters[randomIndex];
+  }
+  return password;
 }
+let password = generatePassword(10);
+console.log(password);
