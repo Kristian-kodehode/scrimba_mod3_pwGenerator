@@ -1,8 +1,15 @@
-let question = prompt("Give me a number please: ");
-if (question > 0) {
-  console.log("Positive");
-} else if (question < 0) {
-  console.log("Negative");
-} else {
-  console.log("Zero");
+let person = {
+  userName: "Kristian",
+  userAge: 40,
+  userGender: "Male",
+  userInterests: ["music", "design", "tv shows", "gaming"],
+};
+
+function logPerson(person) {
+  console.log("Name: " + person.userName);
+  console.log("Age: " + person.userAge);
+  console.log("Gender: " + person.userGender);
+  console.log("Interests: " + person.userInterests);
 }
+
+logPerson(person);
