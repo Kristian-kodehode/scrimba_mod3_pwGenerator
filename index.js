@@ -1,24 +1,108 @@
-const cars = [0, 1, 2, 3];
-cars[0] = "volvo";
-cars[1] = "Ford";
-cars[2] = "Mercedes";
-cars[3] = "Opel";
+const characters = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "~",
+  "`",
+  "!",
+  "@",
+  "#",
+  "$",
+  "%",
+  "^",
+  "&",
+  "*",
+  "(",
+  ")",
+  "_",
+  "-",
+  "+",
+  "=",
+  "{",
+  "[",
+  "}",
+  "]",
+  ",",
+  "|",
+  ":",
+  ";",
+  "<",
+  ">",
+  ".",
+  "?",
+  "/",
+];
 
-const car = {
-  make: cars[0],
-  model: "F40",
-  year: 1994,
-};
-
-function presentingCard(car) {
-  console.log(
-    "My dreamcar is a " +
-      car.make +
-      car.model +
-      " that was made in " +
-      car.year +
-      " ! "
-  );
+function randomGenerator() {
+  const randomIndex = Math.floor(Math.random() * characters.length);
+  return characters[randomIndex];
 }
 
-presentingCard(car);
+function generatePassword(length) {
+  let password = "";
+  for (let i = 0; i < length; i++) {
+    password += randomGenerator();
+  }
+  return password;
+}
+
+console.log(generatePassword(10));
