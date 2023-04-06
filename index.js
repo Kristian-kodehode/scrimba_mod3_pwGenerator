@@ -4,6 +4,9 @@ const person = {
   userHobbies: ["design", "music", "gaming"],
 };
 
-console.log("Name: " + person.userName);
-console.log("Age: " + person.userAge);
-console.log("Hobbies: " + person.userHobbies[0]);
+function printPerson(person) {
+  console.log("Name: " + person.userName);
+  console.log("Age: " + person.userAge);
+  console.log("Hobbies: " + person.userHobbies[0]);
+}
+printPerson(person);
