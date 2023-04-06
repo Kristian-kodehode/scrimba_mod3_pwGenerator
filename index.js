@@ -1,15 +1,9 @@
-let person = {
+const person = {
   userName: "Kristian",
   userAge: 40,
-  userGender: "Male",
-  userInterests: ["music", "design", "tv shows", "gaming"],
+  userHobbies: ["design", "music", "gaming"],
 };
 
-function logPerson(person) {
-  console.log("Name: " + person.userName);
-  console.log("Age: " + person.userAge);
-  console.log("Gender: " + person.userGender);
-  console.log("Interests: " + person.userInterests);
-}
-
-logPerson(person);
+console.log("Name: " + person.userName);
+console.log("Age: " + person.userAge);
+console.log("Hobbies: " + person.userHobbies[0]);
