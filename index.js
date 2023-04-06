@@ -5,8 +5,9 @@ const book = {
   isRead: true,
 };
 
+let readStatus;
+
 function readBook(book) {
-  let readStatus;
   if (book.isRead) {
     readStatus = "read";
   } else {
