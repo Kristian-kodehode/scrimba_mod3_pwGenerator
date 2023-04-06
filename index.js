@@ -16,3 +16,11 @@ function presentingCard(car) {
 }
 
 presentingCard(car);
+
+const cars = [0, 1, 2, 3];
+cars[0] = "volvo";
+cars[1] = "Ford";
+cars[2] = "Mercedes";
+cars[3] = "Opel";
+
+console.log(cars[2]);
