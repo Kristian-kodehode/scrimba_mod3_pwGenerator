@@ -1,29 +1,18 @@
-const book = {
-  title: "Striker",
-  author: "Joan Book",
-  pageCount: 240,
-  isRead: true,
+const car = {
+  make: "Ferrari ",
+  model: "F40",
+  year: 1994,
 };
 
-let readStatus;
-
-function readBook(book) {
-  if (book.isRead) {
-    readStatus = "read";
-  } else {
-    readStatus = "not read";
-  }
+function presentingCard(car) {
   console.log(
-    "I have " +
-      readStatus +
-      " the book " +
-      book.title +
-      " by " +
-      book.author +
-      ". It has " +
-      book.pageCount +
-      " pages."
+    "My dreamcar is a " +
+      car.make +
+      car.model +
+      " that was made in " +
+      car.year +
+      " ! "
   );
 }
 
-readBook(book);
+presentingCard(car);
