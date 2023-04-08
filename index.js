@@ -113,5 +113,5 @@ const generateRandomPasswordTwo = generateRandomPassword();
 // console.log(generateRandomPasswordTwo);
 
 function generateRandomPassword() {
-  document.getElementById("btnPw").innerHTML = generateRandomPassword;
+  document.getElementById("rndmPWone").innerHTML = generateRandomPassword;
 }
