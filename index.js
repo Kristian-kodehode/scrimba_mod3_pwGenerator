@@ -90,26 +90,9 @@ const listCharacters = [
   "/",
 ];
 
-let randomPasswordGenerator = "";
+//CLICKING BUTTON
+document.getElementById("demo").addEventListener("click", myFunction);
 
-for (let i = 0; i < 1; i++) {
-  const randomLetterU = Math.floor(Math.random() * listLettersUpper.length);
-  randomPasswordGenerator += listLettersUpper[randomLetterU];
+function myFunction() {
+  document.getElementById("demo").innerHTML = "";
 }
-
-for (let i = 0; i < 12; i++) {
-  const randomLetterL = Math.floor(Math.random() * listLettersLower.length);
-  randomPasswordGenerator += listLettersLower[randomLetterL];
-}
-
-for (let i = 0; i < 1; i++) {
-  const randomNumber = Math.floor(Math.random() * listNumbers.length);
-  randomPasswordGenerator += listNumbers[randomNumber];
-}
-
-for (let i = 0; i < 1; i++) {
-  const randomCharacter = Math.floor(Math.random() * listCharacters.length);
-  randomPasswordGenerator += listCharacters[randomCharacter];
-}
-
-console.log(randomPasswordGenerator);
