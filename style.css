@@ -2,4 +2,66 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Karla", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-family: "Karla";
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+:root {
+  --blueDrk: #1f2937;
+  --blueMd: #273549;
+  --green: #10b981;
+}
+
+.container {
+  width: 550px;
+  height: 550px;
+  padding: 115px 52px;
+  background-color: var(--blueDrk);
+  margin: 40px auto;
+}
+
+.text1 {
+  margin-bottom: 50px;
+}
+
+.line {
+  background-color: var(--blueMd);
+  height: 1px;
+  width: 100%;
+  margin: 35px 0px;
+}
+
+button {
+  border-style: none;
+  background-color: var(--green);
+  color: white;
+  padding: 16px 20px;
+  border-radius: 6px;
+  font-weight: 400;
 }
