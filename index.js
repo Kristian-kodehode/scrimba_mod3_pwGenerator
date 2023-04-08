@@ -108,4 +108,13 @@ function generateRandomPassword() {
 }
 
 const generateRandomPasswordOne = generateRandomPassword();
-console.log(generateRandomPassword);
+console.log(generateRandomPasswordOne);
+const generateRandomPasswordTwo = generateRandomPassword();
+console.log(generateRandomPasswordTwo);
+
+document.getElementById("btnPw").onclick = function () {
+  generateRandomPassword();
+};
+function generateRandomPassword() {
+  document.getElementById("btnPw").addEventListener;
+}
