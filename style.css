@@ -65,3 +65,11 @@ button {
   border-radius: 6px;
   font-weight: 400;
 }
+
+input {
+  border-style: none;
+  background-color: var(--blueMd);
+  color: white;
+  width: 211px;
+  height: 39px;
+}
