@@ -1,4 +1,4 @@
-const listLettersLower = [
+const listCharacters = [
   "a",
   "b",
   "c",
@@ -25,9 +25,6 @@ const listLettersLower = [
   "x",
   "y",
   "z",
-];
-
-const listLettersUpper = [
   "A",
   "B",
   "C",
@@ -54,11 +51,16 @@ const listLettersUpper = [
   "X",
   "Y",
   "Z",
-];
-
-const listNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-
-const listCharacters = [
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
   "~",
   "`",
   "!",
@@ -90,9 +92,20 @@ const listCharacters = [
   "/",
 ];
 
-//CLICKING BUTTON
-document.getElementById("demo").addEventListener("click", myFunction);
+let passwordLength = 12;
 
-function myFunction() {
-  document.getElementById("demo").innerHTML = "";
+function getRandomCharacter() {
+  let randomChar = Math.floor(Math.random() * listCharacters.length);
+  return listCharacters[randomChar];
 }
+
+function generateRandomPassword() {
+  let randomPassword = "";
+  for (let i = 0; i < passwordLength; i++) {
+    randomPassword += getRandomCharacter();
+  }
+  return randomPassword;
+}
+
+const generateRandomPasswordOne = generateRandomPassword();
+console.log(generateRandomPassword);
