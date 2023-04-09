@@ -114,10 +114,11 @@ function generatePassword() {
 // The function to be called when the button is pushed
 function btnDisplayPassword() {
   const password = generatePassword();
-  let password2 = generatePassword();
-  while (password2 === password) {
-    password2 = generatePassword();
-  }
+  // Password 2 generator ->
+  // let password2 = generatePassword();
+  // while (password2 === password) {
+  //   password2 = generatePassword();
+  // }
 
   document.getElementById("genRndmPw").value = password;
   // document.getElementById("genRndmPwTwo").value = password2;
