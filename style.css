@@ -16,7 +16,6 @@ p {
 }
 
 .container {
-  min-height: 550px;
   max-width: 550px;
   border-radius: 6px;
   background-color: aliceblue;
