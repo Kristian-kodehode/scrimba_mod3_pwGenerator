@@ -7,78 +7,50 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  font-family: "Karla", sans-serif;
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  font-family: "Karla", sans-serif;
-  font-size: 40px;
-  font-weight: 800;
-  line-height: 40px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-
+h1,
 p {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-:root {
-  --blueDrk: #1f2937;
-  --blueMd: #273549;
-  --green: #10b981;
+  margin-bottom: 16px;
 }
 
 .container {
-  width: 550px;
-  height: 550px;
-  padding: 115px 52px;
-  background-color: var(--blueDrk);
+  min-height: 550px;
+  max-width: 550px;
   border-radius: 6px;
-  margin: 40px auto;
+  background-color: aliceblue;
+  margin: 16px auto;
+  padding: 105px 56px;
+  display: grid;
 }
 
-.text1 {
-  margin-bottom: 50px;
-}
-
-.line {
-  background-color: var(--blueMd);
-  height: 1px;
+button,
+input {
+  border-style: none;
+  color: white;
+  border-radius: 6px;
   width: 100%;
-  margin: 35px 0px;
+  height: 49px;
 }
 
 button {
-  border-style: none;
-  background-color: var(--green);
-  color: white;
-  padding: 16px 20px;
-  border-radius: 6px;
-  font-weight: 400;
+  background-color: rgb(106, 106, 245);
+  display: block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: blue;
+  transition: 1s;
 }
 
-.passwordField {
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-}
 input {
-  border-style: none;
-  background-color: var(--blueMd);
-  color: white;
-  width: 50%;
-  height: 39px;
-  border-radius: 6px;
+  background-color: rgb(37, 37, 49);
+  padding-left: 16px;
 }
+
+/* 
+//  Styling of the input 
+
+*/
