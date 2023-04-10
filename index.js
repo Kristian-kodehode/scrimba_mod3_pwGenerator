@@ -111,8 +111,10 @@ function generatePassword() {
   return password;
 }
 
+let btnDisplayPassword = document.getElementById("btnDisplayPassword");
+
 // The function to be called when the button is pushed
-function btnDisplayPassword() {
+btnDisplayPassword.addEventListener("click", function () {
   const password = generatePassword();
   // Password 2 generator ->
   // let password2 = generatePassword();
@@ -122,4 +124,4 @@ function btnDisplayPassword() {
 
   document.getElementById("genRndmPw").value = password;
   // document.getElementById("genRndmPwTwo").value = password2;
-}
+});
