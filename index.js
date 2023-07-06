@@ -101,7 +101,7 @@ function generatePassword() {
   ];
 
   let password = "";
-  // A for loop that generates a random password to be put inside the password variable
+
   for (let i = 0; i < length; i++) {
     password += charset[Math.floor(Math.random() * charset.length)];
   }
