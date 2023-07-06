@@ -5,8 +5,7 @@
 const generatePasswordButton = document.getElementById("btnDisplayPassword");
 function generatePassword() {
   const length = 12;
-
-  const charset = [
+  const upperCase = [
     "A",
     "B",
     "C",
@@ -33,6 +32,8 @@ function generatePassword() {
     "X",
     "Y",
     "Z",
+  ];
+  const lowerCase = [
     "a",
     "b",
     "c",
@@ -69,42 +70,18 @@ function generatePassword() {
     "7",
     "8",
     "9",
-    // "~",
-    // "`",
-    // "!",
-    // "@",
-    // "#",
-    // "$",
-    // "%",
-    // "^",
-    // "&",
-    // "*",
-    // "(",
-    // ")",
-    // "_",
-    // "-",
-    // "+",
-    // "=",
-    // "{",
-    // "[",
-    // "}",
-    // "]",
-    // ",",
-    // "|",
-    // ":",
-    // ";",
-    // "<",
-    // ">",
-    // ".",
-    // "?",
-    // "/",
   ];
+  const specialCase = ["_", "-"];
 
   let password = "";
+  password += upperCase[Math.floor(Math.random() * upperCase.length)];
+
+  password += specialCase[Math.floor(Math.random() * specialCase.length)];
 
   for (let i = 0; i < length; i++) {
-    password += charset[Math.floor(Math.random() * charset.length)];
+    password += lowerCase[Math.floor(Math.random() * lowerCase.length)]; // Add lowercase letters
   }
+
   return password;
 }
 
