@@ -2,11 +2,10 @@
 // First defines length of pw
 // Defines character set that gets used in creating the pw
 // Initializes an empty string  in a variable called password. It stores the random pw and is used to be called later.
-
+const generatePasswordButton = document.getElementById("btnDisplayPassword");
 function generatePassword() {
-  // initialize the length to 12
   const length = 12;
-  // Characterset set in an Array
+
   const charset = [
     "A",
     "B",
@@ -70,58 +69,46 @@ function generatePassword() {
     "7",
     "8",
     "9",
-    "~",
-    "`",
-    "!",
-    "@",
-    "#",
-    "$",
-    "%",
-    "^",
-    "&",
-    "*",
-    "(",
-    ")",
-    "_",
-    "-",
-    "+",
-    "=",
-    "{",
-    "[",
-    "}",
-    "]",
-    ",",
-    "|",
-    ":",
-    ";",
-    "<",
-    ">",
-    ".",
-    "?",
-    "/",
+    // "~",
+    // "`",
+    // "!",
+    // "@",
+    // "#",
+    // "$",
+    // "%",
+    // "^",
+    // "&",
+    // "*",
+    // "(",
+    // ")",
+    // "_",
+    // "-",
+    // "+",
+    // "=",
+    // "{",
+    // "[",
+    // "}",
+    // "]",
+    // ",",
+    // "|",
+    // ":",
+    // ";",
+    // "<",
+    // ">",
+    // ".",
+    // "?",
+    // "/",
   ];
-  // Initializes an empty string in the variable -password
+
   let password = "";
   // A for loop that generates a random password to be put inside the password variable
   for (let i = 0; i < length; i++) {
     password += charset[Math.floor(Math.random() * charset.length)];
   }
-  // Returns the generated password inside the function
-
   return password;
 }
 
-let btnDisplayPassword = document.getElementById("btnDisplayPassword");
-
-// The function to be called when the button is pushed
-btnDisplayPassword.addEventListener("click", function () {
+generatePasswordButton.addEventListener("click", function () {
   const password = generatePassword();
-  // Password 2 generator ->
-  // let password2 = generatePassword();
-  // while (password2 === password) {
-  //   password2 = generatePassword();
-  // }
-
-  document.getElementById("genRndmPw").value = password;
-  // document.getElementById("genRndmPwTwo").value = password2;
+  document.getElementById("generate-random-password").value = password;
 });
